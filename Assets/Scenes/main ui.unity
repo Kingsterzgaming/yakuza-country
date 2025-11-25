@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 290623448}
   - component: {fileID: 290623447}
   - component: {fileID: 290623446}
+  - component: {fileID: 290623449}
   m_Layer: 0
   m_Name: newGame
   m_TagString: Untagged
@@ -338,19 +339,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 290623447}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 102900000, guid: d5703db71929ab54db2d6963363cc45d, type: 3}
-        m_TargetAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: df
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &290623447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +378,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290623444}
   m_CullTransparentMesh: 1
+--- !u!114 &290623449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290623444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 477414459}
 --- !u!1 &342114637
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +403,7 @@ GameObject:
   - component: {fileID: 342114641}
   - component: {fileID: 342114640}
   - component: {fileID: 342114639}
+  - component: {fileID: 342114642}
   m_Layer: 0
   m_Name: exitGame
   m_TagString: Untagged
@@ -523,6 +526,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342114637}
   m_CullTransparentMesh: 1
+--- !u!114 &342114642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342114637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 978812947}
 --- !u!1 &477414459
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,6 +959,7 @@ GameObject:
   - component: {fileID: 537066854}
   - component: {fileID: 537066853}
   - component: {fileID: 537066852}
+  - component: {fileID: 537066855}
   m_Layer: 0
   m_Name: multiplayerGame
   m_TagString: Untagged
@@ -1065,6 +1082,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537066850}
   m_CullTransparentMesh: 1
+--- !u!114 &537066855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537066850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 1089302001}
 --- !u!1 &540517425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &609091742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1560,6 +1590,7 @@ GameObject:
   - component: {fileID: 891447533}
   - component: {fileID: 891447532}
   - component: {fileID: 891447531}
+  - component: {fileID: 891447534}
   m_Layer: 0
   m_Name: purchaseDLC
   m_TagString: Untagged
@@ -1682,6 +1713,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891447529}
   m_CullTransparentMesh: 1
+--- !u!114 &891447534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891447529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 1820351471}
 --- !u!1 &978812947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1874,7 @@ GameObject:
   - component: {fileID: 986820217}
   - component: {fileID: 986820216}
   - component: {fileID: 986820215}
+  - component: {fileID: 986820218}
   m_Layer: 0
   m_Name: licenseInformation
   m_TagString: Untagged
@@ -1952,6 +1997,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986820213}
   m_CullTransparentMesh: 1
+--- !u!114 &986820218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986820213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 1528888499}
 --- !u!1 &1089302001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2969,6 +3027,7 @@ GameObject:
   - component: {fileID: 2066778098}
   - component: {fileID: 2066778097}
   - component: {fileID: 2066778096}
+  - component: {fileID: 2066778099}
   m_Layer: 0
   m_Name: settings
   m_TagString: Untagged
@@ -3091,6 +3150,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066778094}
   m_CullTransparentMesh: 1
+--- !u!114 &2066778099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066778094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::howereffect
+  description: {fileID: 1306598354}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
