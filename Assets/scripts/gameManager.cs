@@ -14,6 +14,11 @@ public class gameManager : MonoBehaviour
     [Tooltip("Name of the next scene after the splash sequence (main ui)")]
     public string mainSceneName = "main ui";
 
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
         StartCoroutine(RunSplashSequence());
@@ -28,10 +33,6 @@ public class gameManager : MonoBehaviour
         Debug.Log("time complete fpr 1st scene");
         SceneManager.LoadScene("flash activity-2");
 
-
-        yield return null;
-
-        // Wait for the second splash duration
         yield return new WaitForSeconds(secondSplashDuration);
 
         
