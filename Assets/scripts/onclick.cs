@@ -15,7 +15,6 @@ public class onclick : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
     [Tooltip("name of the button for perfect action")]
     [Header("New game button and scene")]
     public Button newGame;
-    
     public string newGameClickAction;
     [Space(10)]
     [Header("Multiplayer mini game button and scene")]
@@ -55,9 +54,12 @@ public class onclick : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
     void Start()
     {
         newGame.onClick.AddListener(loadscene);
+        //multiplayerMinigames.onClick.AddListener(loadscene);
+        //settings.onClick.AddListener(loadscene);
+        //purchaseDlc.onClick.AddListener(loadscene);
+        //license.onClick.AddListener(loadscene);
         exit.onClick.AddListener(quitOption);
-        YesButton.onClick.AddListener(() => { Application.Quit(); exitPannel.SetActive(false); Debug.Log("application exit"); });
-        NoButton.onClick.AddListener(()=> { exitPannel.SetActive(false); Debug.Log("pannel closed"); });
+        
     }
     void loadscene()
     {
@@ -70,6 +72,8 @@ public class onclick : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
         if (exitPannel != null)
         {
             exitPannel.SetActive(true);
+            YesButton.onClick.AddListener(() => { Application.Quit(); exitPannel.SetActive(false); Debug.Log("application exit"); });
+            NoButton.onClick.AddListener(() => { exitPannel.SetActive(false); Debug.Log("pannel closed"); });
         }
         else { Debug.Log("not declared /not find"); }
     

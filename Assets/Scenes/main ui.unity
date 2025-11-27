@@ -494,6 +494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd786e30beab3e4a803e353b7a9c22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  description: {fileID: 0}
+  currentAssignedButton: {fileID: 0}
   newGame: {fileID: 290623446}
   newGameClickAction: new game
   multiplayerMinigames: {fileID: 537066852}
@@ -649,7 +651,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342114637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e099520e1029f4cac35216eb69249b, type: 3}
   m_Name: 
@@ -667,6 +669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd786e30beab3e4a803e353b7a9c22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  description: {fileID: 978812947}
+  currentAssignedButton: {fileID: 342114637}
   newGame: {fileID: 290623446}
   newGameClickAction: new game
   multiplayerMinigames: {fileID: 537066852}
@@ -3897,6 +3901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd786e30beab3e4a803e353b7a9c22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  description: {fileID: 0}
+  currentAssignedButton: {fileID: 0}
   newGame: {fileID: 290623446}
   newGameClickAction: new game
   multiplayerMinigames: {fileID: 537066852}
