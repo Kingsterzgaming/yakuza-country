@@ -73,7 +73,7 @@ public class onclick : MonoBehaviour, IPointerExitHandler, IPointerEnterHandler
         {
             exitPannel.SetActive(true);
             YesButton.onClick.AddListener(() => { Application.Quit(); exitPannel.SetActive(false); Debug.Log("application exit"); });
-            NoButton.onClick.AddListener(() => { exitPannel.SetActive(false); Debug.Log("pannel closed"); });
+            NoButton.onClick.AddListener(() => { exitPannel.SetActive(false); Debug.Log("panel closed"); });
         }
         else { Debug.Log("not declared /not find"); }
     
