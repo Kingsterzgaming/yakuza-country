@@ -503,7 +503,9 @@ MonoBehaviour:
   purchaseDlc: {fileID: 891447531}
   license: {fileID: 986820215}
   exit: {fileID: 342114639}
-  exitChoice: {fileID: 0}
+  exitPannel: {fileID: 0}
+  YesButton: {fileID: 0}
+  NoButton: {fileID: 0}
 --- !u!1 &342114637
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +676,9 @@ MonoBehaviour:
   purchaseDlc: {fileID: 891447531}
   license: {fileID: 986820215}
   exit: {fileID: 342114639}
-  exitChoice: {fileID: 2056169074}
+  exitPannel: {fileID: 2056169074}
+  YesButton: {fileID: 1916269677}
+  NoButton: {fileID: 1767505565}
 --- !u!1 &477414459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,6 +3819,7 @@ GameObject:
   - component: {fileID: 2056169075}
   - component: {fileID: 2056169077}
   - component: {fileID: 2056169076}
+  - component: {fileID: 2056169078}
   m_Layer: 0
   m_Name: exit pannel
   m_TagString: Untagged
@@ -3880,6 +3885,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056169074}
   m_CullTransparentMesh: 1
+--- !u!114 &2056169078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056169074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd786e30beab3e4a803e353b7a9c22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  newGame: {fileID: 290623446}
+  newGameClickAction: new game
+  multiplayerMinigames: {fileID: 537066852}
+  multiplayerGameClickAction: 
+  settings: {fileID: 2066778096}
+  settingsClickAction: 
+  purchaseDlc: {fileID: 891447531}
+  license: {fileID: 986820215}
+  exit: {fileID: 342114639}
+  exitPannel: {fileID: 2056169074}
+  YesButton: {fileID: 1916269677}
+  NoButton: {fileID: 1767505565}
 --- !u!1 &2066778094
 GameObject:
   m_ObjectHideFlags: 0
