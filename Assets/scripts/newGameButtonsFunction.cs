@@ -3,59 +3,61 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class newGameButtonsFunction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class newGameButtonsFunction : MonoBehaviour
 {
-    [Space(10)]
-    [Header("employees ui time")]
-    private GameObject btn;
-    private string desname = "abra ka dabra , soon going to update via json ";
-    public GameObject description;
-    public TMP_Text title;
-    void Awake()
-    {
-        btn = this.gameObject;
-    }
-
+  
     [Tooltip("assign buttons from action panel")]
     [Header("properties ui time")]
     public Button properties;
+    public GameObject propertiesTab;
     [Space(10)]
     [Header("employees ui time")]
     public Button employees;
+    public GameObject employeesTab;
     [Space(10)]
     [Header("debts ui time")]
     public Button debts;
+    public GameObject debtsTab;
     [Space(10)]
     [Header("Boardroom ui time")]
     public Button boardRoom;
+    public GameObject boardRoomTab;
     [Space(10)]
     [Header("ShareHolder Meeting scene time")]
     public Button shareholderMeetings;
-    public void OnPointerEnter(PointerEventData eventData) 
-    { 
-        if (description != null)
-        {
-           description.SetActive(true);
-            title.text = desname;
-            
-        }
-    }
-
-   
-
-    public void OnPointerExit(PointerEventData eventData) 
+    [Space(40)]
+    [Tooltip("PROPERTIES BUTTON ACTION LINKS STARTS HERE ")]
+    //[Tooltip("assign buttons from PropertiesTab")]
+    [Header("PROPERTIES BUTTON ACTION LINKS STARTS HERE")]
+    [Header("Properties tab ui time")]
+    public Button assign;
+    public Button upgrade;
+    public Button _properties;
+    public Button market;
+    [Space(10)]
+    [Tooltip("assign buttons from PropertiesTab")]
+    [Header("Properties tab ui time")]
+    public GameObject assignTab;
+    public GameObject upgadeTab;
+    public GameObject _propertiesTab;
+    public GameObject marketTab;
+    private void Awake()
     {
-        description.SetActive(false);
+        properties.onClick.AddListener(() => { if (propertiesTab!= null) { propertiesTab.SetActive(true);  Debug.Log("successful1"); }; });
+        employees.onClick.AddListener(() => { Debug.Log("successful2"); });
+        debts.onClick.AddListener(() => { Debug.Log("successful3"); });
+        boardRoom.onClick.AddListener(() => { Debug.Log("successful4"); });
+        shareholderMeetings.onClick.AddListener(() => { SceneManager.LoadScene("shareholderMeetings"); Debug.Log("successful0"); });
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
