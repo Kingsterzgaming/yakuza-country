@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main ui scenes/new game.unity
     guid: 30b5d1c10c356494cb964d13f165bc8e
+  - enabled: 1
+    path: Assets/Scenes/main ui scenes/multiplayerGame.unity
+    guid: 8e3aba2362080cd4c8ea04f932b33154
+  - enabled: 1
+    path: Assets/Scenes/main ui scenes/purchaseDLC.unity
+    guid: 45d7e93545ef1914c901cdcffac9b00c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
