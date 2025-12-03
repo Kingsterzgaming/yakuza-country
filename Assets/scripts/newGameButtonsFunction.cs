@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
@@ -5,10 +6,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+[System.Serializable]
+public class Data
+{
+    int plan;
+    public List<string> name = new List<string>();
+    public List<string> planPrice = new List<string>();
 
+}
 public class newGameButtonsFunction : MonoBehaviour
 {
-  
+    public Data data;
     [Tooltip("assign buttons from action panel")]
     [Header("properties ui time")]
     public Button properties;
@@ -41,16 +49,44 @@ public class newGameButtonsFunction : MonoBehaviour
     [Tooltip("assign buttons from PropertiesTab")]
     [Header("Properties tab ui time")]
     public GameObject assignTab;
-    public GameObject upgadeTab;
+    public GameObject upgradeTab;
     public GameObject _propertiesTab;
     public GameObject marketTab;
+
+    [Space(10)]
+    [Tooltip("assign buttons from PropertiesTab")]
+    [Header("Properties tab ui time")]
+    public Button buttonPrefab;
+    public Transform parentpannel;
+  
+    //data variables 
+     //int plan;
+
     private void Awake()
+
     {
+        //properties main logic 
         properties.onClick.AddListener(() => { if (propertiesTab!= null) { propertiesTab.SetActive(true);  Debug.Log("successful1"); }; });
+        //properties sub logic
+        assign.onClick.AddListener(()=> {
+                                         assignTab.SetActive(true); 
+                                         
+                                          
+                                        });
+        upgrade.onClick.AddListener(()=> { });
+        _properties.onClick.AddListener(()=> { });
+        market.onClick.AddListener(()=> { });
+
+
+        //employees main logic 
         employees.onClick.AddListener(() => { Debug.Log("successful2"); });
+        // employees sub logic 
+
+
         debts.onClick.AddListener(() => { Debug.Log("successful3"); });
         boardRoom.onClick.AddListener(() => { Debug.Log("successful4"); });
         shareholderMeetings.onClick.AddListener(() => { SceneManager.LoadScene("shareholderMeetings"); Debug.Log("successful0"); });
+        
     }
 
     void Start()

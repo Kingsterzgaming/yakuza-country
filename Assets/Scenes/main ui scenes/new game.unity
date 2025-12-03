@@ -2052,6 +2052,7 @@ GameObject:
   - component: {fileID: 493532643}
   - component: {fileID: 493532642}
   - component: {fileID: 493532641}
+  - component: {fileID: 493532644}
   m_Layer: 0
   m_Name: assign
   m_TagString: Untagged
@@ -2161,6 +2162,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493532639}
   m_CullTransparentMesh: 1
+--- !u!114 &493532644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493532639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
+  properties: {fileID: 1582505229}
+  propertiesTab: {fileID: 1005543202}
+  employees: {fileID: 1434150074}
+  employeesTab: {fileID: 0}
+  debts: {fileID: 1364423149}
+  debtsTab: {fileID: 0}
+  boardRoom: {fileID: 2009260756}
+  boardRoomTab: {fileID: 0}
+  shareholderMeetings: {fileID: 1312638361}
+  assign: {fileID: 0}
+  upgrade: {fileID: 0}
+  _properties: {fileID: 0}
+  market: {fileID: 0}
+  assignTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
+  _propertiesTab: {fileID: 0}
+  marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!1 &514234043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,7 +3648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1005543203
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3648,7 +3683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4897,6 +4932,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
   properties: {fileID: 1582505229}
   propertiesTab: {fileID: 0}
   employees: {fileID: 1434150074}
@@ -4911,9 +4949,11 @@ MonoBehaviour:
   _properties: {fileID: 0}
   market: {fileID: 0}
   assignTab: {fileID: 0}
-  upgadeTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
   _propertiesTab: {fileID: 0}
   marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!114 &1312638365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,6 +5184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
   properties: {fileID: 1582505229}
   propertiesTab: {fileID: 0}
   employees: {fileID: 1434150074}
@@ -5158,9 +5201,11 @@ MonoBehaviour:
   _properties: {fileID: 0}
   market: {fileID: 0}
   assignTab: {fileID: 0}
-  upgadeTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
   _propertiesTab: {fileID: 0}
   marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!114 &1364423153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,6 +5642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
   properties: {fileID: 1582505229}
   propertiesTab: {fileID: 0}
   employees: {fileID: 1434150074}
@@ -5611,9 +5659,11 @@ MonoBehaviour:
   _properties: {fileID: 0}
   market: {fileID: 0}
   assignTab: {fileID: 0}
-  upgadeTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
   _propertiesTab: {fileID: 0}
   marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!114 &1434150078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6054,6 +6104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
   properties: {fileID: 1582505229}
   propertiesTab: {fileID: 1005543202}
   employees: {fileID: 1434150074}
@@ -6068,9 +6121,11 @@ MonoBehaviour:
   _properties: {fileID: 0}
   market: {fileID: 0}
   assignTab: {fileID: 0}
-  upgadeTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
   _propertiesTab: {fileID: 0}
   marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!114 &1582505233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7851,6 +7906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced322796d9870449da06637157c33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  data:
+    name: []
+    planPrice: []
   properties: {fileID: 1582505229}
   propertiesTab: {fileID: 0}
   employees: {fileID: 1434150074}
@@ -7865,9 +7923,11 @@ MonoBehaviour:
   _properties: {fileID: 0}
   market: {fileID: 0}
   assignTab: {fileID: 0}
-  upgadeTab: {fileID: 0}
+  upgradeTab: {fileID: 0}
   _propertiesTab: {fileID: 0}
   marketTab: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  parentpannel: {fileID: 0}
 --- !u!114 &2009260760
 MonoBehaviour:
   m_ObjectHideFlags: 0
